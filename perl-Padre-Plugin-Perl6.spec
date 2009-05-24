@@ -3,7 +3,7 @@
 %define _requires_exceptions perl.Win32.
 
 %define realname   Padre-Plugin-Perl6
-%define version    0.39
+%define version    0.40
 %define release    %mkrel 1
 
 Name:       perl-%{realname}
