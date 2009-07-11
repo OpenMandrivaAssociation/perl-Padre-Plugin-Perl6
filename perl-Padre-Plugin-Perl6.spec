@@ -1,5 +1,5 @@
 %define upstream_name    Padre-Plugin-Perl6
-%define upstream_version 0.41
+%define upstream_version 0.50
 
 # find-requires extracts too much, cf https://qa.mandriva.com/show_bug.cgi?id=47678
 # therefore, forcing explicit require skipping of Win32
@@ -15,6 +15,7 @@ Summary:    Perl document syntax-checking in the background
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/Padre/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires: perl(App::Grok)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(IPC::Run3)
 BuildRequires: perl(Padre)
