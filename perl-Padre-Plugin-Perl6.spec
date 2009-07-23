@@ -1,5 +1,5 @@
 %define upstream_name    Padre-Plugin-Perl6
-%define upstream_version 0.50
+%define upstream_version 0.53
 
 # find-requires extracts too much, cf https://qa.mandriva.com/show_bug.cgi?id=47678
 # therefore, forcing explicit require skipping of Win32
