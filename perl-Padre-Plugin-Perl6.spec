@@ -1,5 +1,5 @@
 %define upstream_name    Padre-Plugin-Perl6
-%define upstream_version 0.63
+%define upstream_version 0.64
 
 # find-requires extracts too much, cf https://qa.mandriva.com/show_bug.cgi?id=47678
 # therefore, forcing explicit require skipping of Win32
@@ -19,6 +19,7 @@ BuildRequires: perl(App::Grok)
 BuildRequires: perl(ExtUtils::MakeMaker)
 BuildRequires: perl(IPC::Run3)
 BuildRequires: perl(Padre)
+BuildRequires: perl(Perl6::Refactor)
 BuildRequires: perl(Readonly)
 BuildRequires: perl(Syntax::Highlight::Perl6)
 BuildRequires: perl(Test::Exception)
