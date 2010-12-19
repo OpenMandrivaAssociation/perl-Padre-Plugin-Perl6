@@ -17,6 +17,7 @@ Source0:    http://www.cpan.org/modules/by-module/Padre/%{upstream_name}-%{upstr
 
 BuildRequires: perl(App::Grok)
 BuildRequires: perl(ExtUtils::MakeMaker)
+BuildRequires: perl(File::ShareDir::Install)
 BuildRequires: perl(IPC::Run3)
 BuildRequires: perl(Padre)
 BuildRequires: perl(Perl6::Refactor)
