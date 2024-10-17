@@ -16,7 +16,7 @@ Release:	5
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Perl document syntax-checking in the background
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Padre/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
