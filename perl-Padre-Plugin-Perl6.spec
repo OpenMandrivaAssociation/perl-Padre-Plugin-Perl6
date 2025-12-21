@@ -19,6 +19,7 @@ Summary:	Perl document syntax-checking in the background
 Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/Padre/%{upstream_name}-%{upstream_version}.tar.gz
 
+BuildRequires:	make
 BuildRequires:	perl-devel
 BuildRequires:	perl(App::Grok)
 BuildRequires:	perl(ExtUtils::MakeMaker)
