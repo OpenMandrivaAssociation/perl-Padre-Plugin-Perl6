@@ -10,14 +10,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%perl_convert_version %{upstream_version}
-Release:	5
+Version:	%{upstream_version}
+Release:	6
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Perl document syntax-checking in the background
-Url:		https://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Padre/%{upstream_name}-%{upstream_version}.tar.gz
+Url:		https://padre.perlide.org
+Source0:	https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Padre-Plugin-Perl6-%{upstream_version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
