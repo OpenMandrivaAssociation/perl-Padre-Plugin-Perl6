@@ -1,6 +1,4 @@
 %define upstream_name    Padre-Plugin-Perl6
-%define upstream_version 0.71
-
 # find-requires extracts too much, cf https://qa.mandriva.com/show_bug.cgi?id=47678
 # therefore, forcing explicit require skipping of Win32
 %if %{_use_internal_dependency_generator}
@@ -10,14 +8,14 @@
 %endif
 
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.71
+Release:	7
 
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Summary:	Perl document syntax-checking in the background
 Url:		https://padre.perlide.org
-Source0:	https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Padre-Plugin-Perl6-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AZ/AZAWAWI/Padre-Plugin-Perl6-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -43,7 +41,7 @@ It inherits from the Padre::Task::SyntaxChecker manpage. Please read its
 documentation!
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version} 
+%setup -q -n %{upstream_name}-%{version} 
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -121,8 +119,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 * Sun May 31 2009 Jérôme Quelin <jquelin@mandriva.org> 0.410.0-1mdv2010.0
 + Revision: 381589
 - update to 0.41
-- using %%perl_convert_version
-- fix license field
+- using %0.71 fix license field
 
 * Sun May 24 2009 Jérôme Quelin <jquelin@mandriva.org> 0.40-1mdv2010.0
 + Revision: 379284
